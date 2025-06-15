@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="public/style.css" />
+		<title>Frenly Park</title>
+	</head>
+	<body style="font-family: sans-serif">
+		<div id="app">
+			<router-view :key="$route.fullPath"></router-view>
+		</div>
+		<script src="public/vue.global.prod.js"></script>
+		<script src="public/vue-router.global.prod.js"></script>
+
+		<script
+			src="https://cdn.socket.io/4.8.1/socket.io.min.js"
+			integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="public/pages/home.vue.js"></script>
+		<script src="public/pages/room.vue.js"></script>
+		<script src="public/main.js"></script>
+	</body>
+</html>
