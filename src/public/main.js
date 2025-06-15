@@ -1,5 +1,4 @@
-const URL = "localhost:5000";
-const socket = io(URL, { autoConnect: false });
+const socket = io(window.location.origin, { autoConnect: false });
 
 const routes = [
 	{ path: "/", component: Home },
